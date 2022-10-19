@@ -14,9 +14,12 @@
         android:theme="@style/Theme.WilsonMungaiMuguthi_MAPD711_Assignment2_CoffeeOnline"
         tools:targetApi="31">
         <activity
+            android:name=".Pay"
+            android:exported="false" />
+        <activity
             android:name=".Order"
             android:exported="false"
-            android:label="order"/>
+            android:label="order" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

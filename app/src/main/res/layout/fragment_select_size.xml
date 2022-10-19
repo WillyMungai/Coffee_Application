@@ -6,29 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".SelectSize">
 
+
     <TextView
-        android:id="@+id/select_size"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="177dp"
-        android:layout_marginBottom="45dp"
-        android:text="Select a Size"
+        android:text="Select Size"
         app:layout_constraintBottom_toTopOf="@+id/radio_group"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.525">
 
+    </TextView>
 
     <RadioGroup
         android:id="@+id/radio_group"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="390dp"
+        android:layout_width="321dp"
+        android:layout_height="97dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/select_size">
+        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintStart_toStartOf="parent">
 
         <RadioButton
             android:id="@+id/small_radiobtn"
@@ -44,7 +45,7 @@
 
         <RadioButton
             android:id="@+id/large_radiobtn"
-            android:layout_width="wrap_content"
+            android:layout_width="122dp"
             android:layout_height="wrap_content"
             android:text="Large">
 

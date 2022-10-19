@@ -31,9 +31,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="21dp"
         android:text="Latte"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintBottom_toTopOf="@+id/SelectSize_fcv"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -41,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="51dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginEnd="30dp"
         android:text="Cappuccino"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -51,26 +51,41 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="38dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="21dp"
         android:text="Macchiato"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintBottom_toTopOf="@+id/SelectSize_fcv"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/SelectSize_fcv"
+        android:name="com.example.wilsonmungaimuguthi_mapd711_assignment2_coffeeonline.SelectSize"
         android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="204dp"
-        android:orientation="vertical"
+        android:layout_height="150dp"
+        android:layout_marginTop="205dp"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Options_fcv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/SelectSize_fcv"
-            android:name="com.example.wilsonmungaimuguthi_mapd711_assignment2_coffeeonline.SelectSize"
-            android:layout_width="match_parent"
-            android:layout_height="100dp" />
-    </LinearLayout>
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/Options_fcv"
+        android:name="com.example.wilsonmungaimuguthi_mapd711_assignment2_coffeeonline.Options"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="176dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/order_continue_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="51dp"
+        android:text="CONTINUE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
