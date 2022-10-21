@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".Options">
 
     <TextView
@@ -13,6 +14,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="Options"
+        android:textColor="@color/white"
+        android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -23,9 +26,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="54dp"
+        android:layout_marginTop="98dp"
+        android:buttonTint="@color/white"
         android:onClick="onCheckboxClicked"
         android:text="2 Shots"
+        android:textColor="@color/white"
+        android:textSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -34,11 +40,84 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="30dp"
+        android:buttonTint="@color/white"
         android:onClick="onCheckboxClicked"
         android:text="Sugar"
+        android:textColor="@color/white"
+        android:textSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkbox_2_shots" />
+
+    <CheckBox
+        android:id="@+id/checkbox_cream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:buttonTint="@color/white"
+        android:onClick="onCheckboxClicked"
+        android:text="Cream"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_sugar" />
+
+    <CheckBox
+        android:id="@+id/checkbox_whole_milk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:buttonTint="@color/white"
+        android:onClick="onCheckboxClicked"
+        android:text="Whole Milk"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_cream" />
+
+    <CheckBox
+        android:id="@+id/checkbox_2_milk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:buttonTint="@color/white"
+        android:onClick="onCheckboxClicked"
+        android:text="2% Milk"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_whole_milk" />
+
+    <CheckBox
+        android:id="@+id/checkbox_non_fat_milk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:buttonTint="@color/white"
+        android:onClick="onCheckboxClicked"
+        android:text="Non Fat Milk"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_2_milk" />
+
+    <CheckBox
+        android:id="@+id/checkbox_almond_milk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:buttonTint="@color/white"
+        android:onClick="onCheckboxClicked"
+        android:text="Almond Milk"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_non_fat_milk" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,15 +11,20 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.WilsonMungaiMuguthi_MAPD711_Assignment2_CoffeeOnline"
+        android:theme="@style/Theme.AppCompat.DayNight"
         tools:targetApi="31">
         <activity
+            android:name=".Summary"
+            android:exported="false"
+            android:label="Summary"/>
+        <activity
             android:name=".Pay"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Pay" />
         <activity
             android:name=".Order"
             android:exported="false"
-            android:label="order" />
+            android:label="Order" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

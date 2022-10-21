@@ -4,19 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/app_logo"
         android:layout_width="200dp"
         android:layout_height="0dp"
-        android:layout_marginTop="77dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="13dp"
         android:src="@drawable/app_logo"
         app:layout_constraintBottom_toTopOf="@+id/coffe_shop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#D1AE35">
 
     </ImageView>
 
@@ -24,10 +26,13 @@
         android:id="@+id/coffe_shop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="94dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="29dp"
         android:text="COFFEE SHOP"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/about_us"
-        app:layout_constraintEnd_toEndOf="@+id/app_logo"
         app:layout_constraintStart_toStartOf="@+id/app_logo"
         app:layout_constraintTop_toBottomOf="@+id/app_logo">
 
@@ -37,8 +42,10 @@
         android:id="@+id/about_us"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="1dp"
+        android:layout_marginBottom="24dp"
         android:text="About Us"
+        android:textColor="@color/white"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/scrollView1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,9 +55,9 @@
         android:id="@+id/scrollView1"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="54dp"
-        android:layout_marginEnd="54dp"
-        android:layout_marginBottom="79dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="49dp"
         app:layout_constraintBottom_toTopOf="@+id/get_started_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,14 +66,20 @@
         <TextView
             android:id="@+id/about_us_details"
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-            molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum!
-Provident similique accusantium nemo autem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum!
-Provident similique accusantium nemo autem. ">
+            android:layout_height="100dp"
+            android:text="Coffee Shop and Gallery offers a unique coffee house environment
+unlike any other in Macon. We are not only a place to drop in and get your morning cup of
+coffee (although you are more than welcome to do that), we are a place where you can sit
+down and enjoy that tailor-made cup of coffee. If you need to work, we have a seating area
+created specifically for you. If you need to rest, we have a soft-seating area in front of
+a stone fire place that is perfect for your weary mind and body. We offer a delicious
+variety of coffee from Safehouse Coffee made by our professionally trained baristas. We have
+everything from classic coffee to our house made specialty beverages.  All of our sauces and
+syrups are made in-house with all natural ingredients (no chemicals or preservatives) ensuring
+you the highest quality in taste and health.  You can complete your coffee with one of our delicious
+sweet treats made by our very own baker. We look forward to serving you at Coffee
+Shop and Gallery! "
+            android:textColor="@color/white">
 
         </TextView>
 
@@ -74,12 +87,15 @@ Provident similique accusantium nemo autem. ">
 
     <Button
         android:id="@+id/get_started_btn"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="54dp"
-        android:layout_marginEnd="54dp"
+        android:layout_width="342dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
         android:layout_marginBottom="78dp"
+        android:background="@drawable/btn_background"
         android:text="GET STARTED"
+        android:textSize="20dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

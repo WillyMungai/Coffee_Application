@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".Order">
 
     <TextView
@@ -12,80 +13,105 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
         android:text="Select a Coffee"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/cappuccino_btn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/americano_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginEnd="105dp"
+        android:background="@drawable/btn_background"
         android:text="Americano"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/cappuccino_btn"
+        app:layout_constraintEnd_toStartOf="@+id/cappuccino_btn"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/select_coffee" />
+        app:layout_constraintTop_toTopOf="@+id/cappuccino_btn" />
 
     <Button
         android:id="@+id/latte_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="21dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="105dp"
+        android:background="@drawable/btn_background"
         android:text="Latte"
-        app:layout_constraintBottom_toTopOf="@+id/SelectSize_fcv"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/macchiato_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/americano_btn" />
 
     <Button
         android:id="@+id/cappuccino_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="51dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/btn_background"
         android:text="Cappuccino"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/macchiato_btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/americano_btn"
+        app:layout_constraintTop_toBottomOf="@+id/select_coffee" />
 
     <Button
         android:id="@+id/macchiato_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="38dp"
-        android:layout_marginBottom="21dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="37dp"
+        android:background="@drawable/btn_background"
         android:text="Macchiato"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/SelectSize_fcv"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/latte_btn"
+        app:layout_constraintTop_toBottomOf="@+id/cappuccino_btn" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/SelectSize_fcv"
-        android:name="com.example.wilsonmungaimuguthi_mapd711_assignment2_coffeeonline.SelectSize"
         android:layout_width="0dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="205dp"
-        android:layout_marginBottom="200dp"
-        app:layout_constraintBottom_toBottomOf="@+id/Options_fcv"
+        android:layout_height="0dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/Options_fcv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/macchiato_btn" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/Options_fcv"
-        android:name="com.example.wilsonmungaimuguthi_mapd711_assignment2_coffeeonline.Options"
         android:layout_width="0dp"
-        android:layout_height="200dp"
-        android:layout_marginBottom="176dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/order_continue_btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SelectSize_fcv" />
 
     <Button
         android:id="@+id/order_continue_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="51dp"
+        android:layout_width="332dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/btn_background"
         android:text="CONTINUE"
+        android:textSize="20dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Options_fcv" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

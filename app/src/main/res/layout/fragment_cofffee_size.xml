@@ -3,51 +3,65 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".SelectSize">
-
+    android:layout_height="200dp"
+    android:background="@color/black"
+    tools:context=".CofffeeSize">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="3dp"
         android:text="Select Size"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toTopOf="@+id/radio_group"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.046"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.525">
+        app:layout_constraintTop_toTopOf="parent">
 
     </TextView>
 
     <RadioGroup
         android:id="@+id/radio_group"
         android:layout_width="321dp"
-        android:layout_height="97dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="91dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.177"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <RadioButton
             android:id="@+id/small_radiobtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Small" />
+            android:layout_weight="100"
+            android:buttonTint="@color/white"
+            android:text="Small"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
 
         <RadioButton
             android:id="@+id/medium_radiobtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Medium" />
+            android:buttonTint="@color/white"
+            android:text="Medium"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
 
         <RadioButton
             android:id="@+id/large_radiobtn"
             android:layout_width="122dp"
             android:layout_height="wrap_content"
-            android:text="Large">
+            android:layout_weight="100"
+            android:buttonTint="@color/white"
+            android:text="Large"
+            android:textColor="@color/white"
+            android:textSize="20dp">
 
         </RadioButton>
     </RadioGroup>
